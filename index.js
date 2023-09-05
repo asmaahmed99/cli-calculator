@@ -25,7 +25,6 @@ async function welcome() {
     | | . | 0 | = | | / | |
     | |___|___|___| |___| |
     |_____________________|`);
-
 }
 await welcome();
 async function askQuestion() {
@@ -71,7 +70,5 @@ async function startAgain() {
             message: chalk.yellow("Do you want to continue? press y or n: "),
         });
     } while (again.restart == 'y' || again.restart == 'Y' || again.restart == 'yes' || again.restart == 'YES');
-
 }
-
 startAgain();

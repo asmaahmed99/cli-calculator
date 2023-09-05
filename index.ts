@@ -15,6 +15,8 @@ async function welcome () {
     await sleep();
     rainbowTitle.stop();
     console.log(`    _____________________
+
+
     |  _________________  |
     | | ASMA         0. | |
     | |_________________| |
@@ -28,6 +30,7 @@ async function welcome () {
     | | . | 0 | = | | / | |
     | |___|___|___| |___| |
     |_____________________|`);
+
 }
 
 await welcome();
@@ -74,6 +77,7 @@ async function askQuestion(){
 
 
 async function startAgain (){
+
     do{
         await askQuestion();
         var again = await inquirer.prompt({
@@ -81,6 +85,7 @@ async function startAgain (){
             name: "restart",
             message: chalk.yellow ("Do you want to continue? press y or n: "),
         })
+        
     }while(again.restart == 'y' ||again.restart == 'Y' ||again.restart == 'yes' ||again.restart == 'YES')
 
 }
